@@ -3,15 +3,16 @@ print("Attempting ".._G.Version.." load...")
 local environment = assert(getgenv, "<OH> ~ Your exploit is not supported")()
 
 if oh then
+    print("Stopping existing OH")
     oh.Exit()
 end
 
 local web = true
-local user = "nunera" -- change if you're using a fork
+local user = "binmaster-access" -- change if you're using a fork
 local branch = "revision"
 local importCache = {}
 
-
+print("bypassing adonis")
 
 --attempting adonis bypasses
 for k, v in pairs(getgc(true)) do
