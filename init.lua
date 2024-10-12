@@ -25,6 +25,8 @@ for k, v in pairs(getgc(true)) do
     end
 end
 
+print("hooking namecalls")
+
 local Namecall
 
 Namecall = hookmetamethod(game, '__namecall', function(self, ...)
